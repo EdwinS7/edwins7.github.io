@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Venus Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header text-light">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </header>
+<html>
+    <head>
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            }
 
-        <main>
-            <section class="hero text-center text-light">
-				<div class="hero-bg"></div>
-				<div class="hero-particles-container">
-					<canvas id="hero-particles"></canvas>
-				</div>
-                <div class="container-sm">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Nebula Engine</h1>
-	                        <p class="hero-paragraph">Simplistic and easy to use beginner friendly game designer and graphical interface designer</p>
-	                        <div class="hero-cta">
-								<a class="button button-primary button-wide-mobile" href="#">Apply for early access</a>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </section>
+            .container {
+            display: flex;
+            flex-direction: column; /* align text vertically */
+            align-items: center;
+            }
 
-			<section class="features-extended section">
-                <div class="features-extended-inner section-inner">
-					<div class="features-extended-wrap">
-						<div class="container">
-							<div class="feature-extended">
-								<div class="feature-extended-image">
-									<h3 class="mt-0 mb-16">What will this project be used for?</h3>
-									<p class="m-0">Nebula is intended to be used for graphical interface design and simple 2d game design.</p>
-								</div>
-							</div>
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-									<p class="m-0">We are planning on implementing lua scripting for the main game engine coding. This is just an idea as of now and is not confirmed.</p>
-        </main>
+            p {
+            position: relative;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 2em;
+            letter-spacing: 4px;
+            overflow: hidden;
+            background: linear-gradient(90deg, #000, #fff, #000);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: animate 3s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0 20px;
+            }
 
-    <script src="dist/js/main.min.js"></script>
-</body>
+
+            @keyframes animate {
+              0% {
+                background-position: -500%;
+              }
+              100% {
+                background-position: 500%;
+              }
+            }
+        </style> 
+
+        <STYLE type="text/css">
+            H1.Title {
+                font-family: 'Segoe UI';
+                font-weight: normal;
+                font-style: normal;
+                text-align: center;
+                color: #0091ff;
+            }
+        </STYLE>
+
+        <meta charset = "utf-8" />
+          
+        <title>
+            Nebula Engine
+        </title>
+          
+        <!-- add icon link -->
+        <link rel = "icon" href = "https://media.discordapp.net/attachments/979215332432576532/1074898596547264542/Luna-circle.png?width=671&height=671" 
+        type = "image/x-icon">
+          
+    </head>
+      
+    <body>
+        <div class="container">
+          <p>Nebula</p>
+          <p>In development...</p>
+        </div>
+      </body>
+      
 </html>
